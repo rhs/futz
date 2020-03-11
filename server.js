@@ -5,7 +5,7 @@ var port = 8080
 var server = http.createServer(function (request, response) {
   console.log("Hi Luke! We got a request: " + request.url)
   response.writeHead(200, {'Content-Type': 'text/plain'})
-  response.end('Blah 3!\n')
+  response.end('PR Foo\n')
 })
 
 server.listen(port)
