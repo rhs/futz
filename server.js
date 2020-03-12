@@ -3,7 +3,7 @@ var http = require('http')
 var port = 8080
 
 var server = http.createServer(function (request, response) {
-  console.log("Bar Request Log: " + request.url)
+  console.log("PR Bar request Log: " + request.url)
   response.writeHead(200, {'Content-Type': 'text/plain'})
   response.end('PR Bar\n')
 })
