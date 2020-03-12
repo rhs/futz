@@ -3,9 +3,9 @@ var http = require('http')
 var port = 8080
 
 var server = http.createServer(function (request, response) {
-  console.log("Hi Luke! We got a request: " + request.url)
+  console.log("Master request log: " + request.url)
   response.writeHead(200, {'Content-Type': 'text/plain'})
-  response.end('Hi Luke!!!!!!!!! (Blah Branch 3)\n')
+  response.end('Master\n')
 })
 
 server.listen(port)
