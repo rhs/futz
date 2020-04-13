@@ -3,9 +3,9 @@ var http = require('http')
 var port = 8080
 
 xvar server = http.createServer(function (request, response) {
-  console.log("PR Foo request Log: " + request.url)
+  console.log("PR CrashLoopBackOff Log: " + request.url)
   response.writeHead(200, {'Content-Type': 'text/plain'})
-  response.end('PR Futz\n')
+  response.end('PR CrashLoopBackOff\n')
 })
 
 server.listen(port)
